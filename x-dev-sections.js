@@ -28,6 +28,16 @@ Math.easeInOutQuad = function (t, b, c, d) {
     return -c / 2 * (t * (t - 2) - 1) + b;
 };
 
+function mobileMenu() {
+    "use strict";
+    var y = document.getElementById("nav-nav");
+    if (y.className === "nav-mobile") {
+        y.className += " responsive";
+    } else {
+        y.className = "nav-mobile";
+    }
+}
+
 var x = window.matchMedia("(min-width: 600px)"),
 b = document.documentElement,
 n = 600;
@@ -42,6 +52,7 @@ function goToHome() {
     } else {
         scrollTo(b, a, n);
         scrollTo(document.body, a, n);
+        mobileMenu();
     }
 }
 
@@ -68,6 +79,7 @@ function goToAbout() {
     } else {
         scrollTo(b, a, n);
         scrollTo(document.body, a, n);
+        mobileMenu();
     }
 }
 
@@ -81,6 +93,7 @@ function goToProjects() {
     } else {
         scrollTo(b, a, n);
         scrollTo(document.body, a, n);
+        mobileMenu();
     }
 }
 
@@ -94,6 +107,7 @@ function goToTeam() {
     } else {
         scrollTo(b, a, n);
         scrollTo(document.body, a, n);
+        mobileMenu();
     }
 }
 
@@ -107,6 +121,7 @@ function goToPartners() {
     } else {
         scrollTo(b, a, n);
         scrollTo(document.body, a, n);
+        mobileMenu();
     }
 }
 
@@ -120,5 +135,6 @@ function goToContact() {
     } else {
         scrollTo(b, a, n);
         scrollTo(document.body, a, n);
+        mobileMenu();
     }
 }
