@@ -6,7 +6,7 @@
     display: none;
 }
 .mySlides img {
-    min-height: 500px;
+    min-height: 550px;
     height: 100vh;
     width: 100%;
     object-fit: cover;
