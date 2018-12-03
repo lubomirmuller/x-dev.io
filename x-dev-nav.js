@@ -37,14 +37,3 @@ mediaScroll(x);
 x.addListener(mediaScroll);
 
 
-function mobileMenu() {
-    "use strict";
-    var y = document.getElementById("nav-nav");
-    if (y.className === "nav-mobile") {
-        y.className += " responsive";
-    } else {
-        y.className = "nav-mobile";
-    }
-}
-
-
