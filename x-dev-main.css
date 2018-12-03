@@ -199,6 +199,10 @@ footer .socials {
     float: right;
     padding-right: 150px;
 }
+ a[href^=tel] {
+    text-decoration:inherit;
+    color: inherit;
+  }
 
 @media only screen and (max-width: 800px) {
     .credits {
