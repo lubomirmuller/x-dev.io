@@ -1,14 +1,17 @@
 .grid {
+    display: -ms-grid;
     display: grid;
     width: 100%;
     margin: auto;
+    -ms-grid-rows: (80px)[20];
+    -ms-grid-columns: (1fr)[12];
     grid-template: repeat(20, 80px) / repeat(12, 1fr);
     overflow: hidden;
-    grid-gap: 10px;
 }
 .grid img {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 .explore {
