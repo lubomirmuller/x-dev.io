@@ -56,7 +56,7 @@ nav li {
 nav .icon {
     display: none;
     padding-right: 40px;
-    padding-left: 40px;;
+    padding-left: 40px;
     font-size: 25px;
 }
 main {
@@ -211,12 +211,22 @@ footer .socials {
         padding: 15px 40px;
     }
     header {
-        position: absolute;
         height: 80px;
+        background: none;
         border-bottom: solid 1px white;
     }
     header:after {
         padding-top: 20px;
+        transition: 0.7s ease;
+    }
+    .header-mobile {
+        background-color: white;
+        color: #2c2f33;
+        border-bottom: solid 1px #2c2f33;
+    }
+    .header-mobile:after {
+        margin-left: -1000px;
+        transition: 0.7s ease;
     }
     nav {
         line-height: 80px;

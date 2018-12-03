@@ -1,7 +1,7 @@
 function scrollFunctionBig() {
     "use strict";
-    var a = document.getElementById("header");
-    var b = document.getElementById("nav");
+    var a = document.getElementById("header"),
+    b = document.getElementById("nav");
     if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
         a.classList.add("header");
         b.classList.add("nav");
@@ -13,11 +13,21 @@ function scrollFunctionBig() {
 
 function scrollFunctionSmall() {
     "use strict";
-    var a = document.getElementById("header");
-    var b = document.getElementById("nav");
+    var a = document.getElementById("header"),
+    b = document.getElementById("nav");
     if (document.body.scrollTop < 5 || document.documentElement.scrollTop < 5) {
         a.classList.remove("header");
         b.classList.remove("nav");
+    }
+}
+
+function headerMobile() {
+    "use strict";
+    var c = document.getElementById("header");
+    if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+        c.classList.add("header-mobile");
+    } else {
+        c.classList.remove("header-mobile");
     }
 }
 
@@ -27,7 +37,7 @@ function mediaScroll(x) {
         window.onscroll = function () {scrollFunctionBig(); };
         window.onresize = function () {scrollFunctionBig(); };
     } else {
-        window.onscroll = function () {scrollFunctionSmall(); };
+        window.onscroll = function () {scrollFunctionSmall(); headerMobile(); };
         window.onresize = function () {scrollFunctionSmall(); };
     }
 }

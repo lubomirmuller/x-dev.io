@@ -38,103 +38,75 @@ function mobileMenu() {
     }
 }
 
-var x = window.matchMedia("(min-width: 600px)"),
-b = document.documentElement,
+function mobileMenuHome() {
+    var z = document.getElementById("nav-nav");
+    if (z.matches(".responsive")) {
+        mobileMenu();
+    } else {}
+}
+
+var b = document.documentElement,
 n = 600;
 
 function goToHome() {
     "use strict";
     var elem = document.getElementById("home"),
-    a = elem.offsetTop;
-    if (x.matches) {
-        scrollTo(b, a - 80, n);
-        scrollTo(document.body, a - 80, n);
-    } else {
+    a = elem.offsetTop - 80;
         scrollTo(b, a, n);
         scrollTo(document.body, a, n);
-        mobileMenu();
-    }
+        mobileMenuHome();
 }
 
 function getStarted() {
     "use strict";
     var elem = document.getElementById("about"),
-    a = elem.offsetTop;
-    if (x.matches) {
-        scrollTo(b, a - 80, n);
-        scrollTo(document.body, a - 80, n);
-    } else {
+    a = elem.offsetTop - 80;
         scrollTo(b, a, n);
         scrollTo(document.body, a, n);
-    }
 }
 
 function goToAbout() {
     "use strict";
     var elem = document.getElementById("about"),
-    a = elem.offsetTop;
-    if (x.matches) {
-        scrollTo(b, a - 80, n);
-        scrollTo(document.body, a - 80, n);
-    } else {
+    a = elem.offsetTop - 80;
         scrollTo(b, a, n);
         scrollTo(document.body, a, n);
         mobileMenu();
-    }
 }
 
 function goToProjects() {
     "use strict";
     var elem = document.getElementById("projects"),
     a = elem.offsetTop;
-    if (x.matches) {
-        scrollTo(b, a - 80, n);
-        scrollTo(document.body, a - 80, n);
-    } else {
+        a = elem.offsetTop - 80;
         scrollTo(b, a, n);
         scrollTo(document.body, a, n);
         mobileMenu();
-    }
 }
 
 function goToTeam() {
     "use strict";
     var elem = document.getElementById("team"),
-    a = elem.offsetTop;
-    if (x.matches) {
-        scrollTo(b, a - 80, n);
-        scrollTo(document.body, a - 80, n);
-    } else {
+        a = elem.offsetTop - 80;
         scrollTo(b, a, n);
         scrollTo(document.body, a, n);
         mobileMenu();
-    }
 }
 
 function goToPartners() {
     "use strict";
     var elem = document.getElementById("partners"),
-    a = elem.offsetTop;
-    if (x.matches) {
-        scrollTo(b, a - 80, n);
-        scrollTo(document.body, a - 80, n);
-    } else {
+        a = elem.offsetTop - 80;
         scrollTo(b, a, n);
         scrollTo(document.body, a, n);
         mobileMenu();
-    }
 }
 
 function goToContact() {
     "use strict";
     var elem = document.getElementById("contact"),
-    a = elem.offsetTop;
-    if (x.matches) {
-        scrollTo(b, a - 80, n);
-        scrollTo(document.body, a - 80, n);
-    } else {
+        a = elem.offsetTop - 80;
         scrollTo(b, a, n);
         scrollTo(document.body, a, n);
         mobileMenu();
-    }
 }
