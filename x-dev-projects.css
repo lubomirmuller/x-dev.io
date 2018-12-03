@@ -9,7 +9,7 @@
     overflow: hidden;
     grid-gap: 10px;
 }
-@supports not (grid-gap) {
+@supports not (grid-gap: 10px) {
   .a {
     margin-bottom: 10px;
   }
