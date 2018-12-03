@@ -55,7 +55,8 @@ nav li {
 }
 nav .icon {
     display: none;
-    margin-right: 40px;
+    padding-right: 40px;
+    padding-left: 40px;;
     font-size: 25px;
 }
 main {
