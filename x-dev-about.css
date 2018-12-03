@@ -1,0 +1,139 @@
+.development-1, .investment-1, .partnership-1, .cooperation-1 {
+    display: block;
+    float: left;
+    position: relative;
+    height: 400px;
+    width: 25%;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.development-1 {
+    padding-left: 0;
+}
+.cooperation-1 {
+    padding-right: 0;
+}
+.development-2, .investment-2, .partnership-2, .cooperation-2 {
+    background-color: white;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.development-1 img, .investment-1 img, .partnership-1 img, .cooperation-1 img {
+    height: 100%;
+    width: 100%;
+    opacity: .85;
+    object-fit: cover;
+}
+.development-1 h4, .investment-1 h4, .partnership-1 h4, .cooperation-1 h4 {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 150px;
+    padding-left: 25px;
+    color: white;
+    font-size: 1.5em;
+    opacity: 0;
+}
+.development-1 p, .investment-1 p, .partnership-1 p, .cooperation-1 p {
+    position: absolute;
+    bottom: 0;
+    text-align: right;
+    opacity: 0;
+    color: white;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+@media only screen and (min-width: 801px) {
+    .development-1:hover h4, .investment-1:hover h4, .partnership-1:hover h4, .cooperation-1:hover h4 {
+        opacity: 1;
+        z-index: 5;
+    }
+    .development-1:hover p, .investment-1:hover p, .partnership-1:hover p, .cooperation-1:hover p {
+        opacity: 1;
+        z-index: 5;
+    }
+    .development-1:hover img, .investment-1:hover img, .partnership-1:hover img, .cooperation-1:hover img {
+        opacity: .7;
+        transform: scale(1.5);
+        transition: 1s ease;
+    }
+    .development-1:hover .development-2, .investment-1:hover .investment-2, .partnership-1:hover .partnership-2, .cooperation-1:hover .cooperation-2 {
+        background-color: black;
+    }
+    .development-1:after, .investment-1:after, .partnership-1:after, .cooperation-1:after {
+        height: 1px;
+        width: 90%;
+        position: absolute;
+        content: '';
+        background-color: white;
+        margin: 15px;
+        z-index: 5;
+        bottom: 0;
+        left: 0%;
+    }
+    .development-1:hover:after, .investment-1:hover:after, .partnership-1:hover:after, .cooperation-1:hover:after {
+        left: 45%;
+        width: 40%;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    .development-1:before, .investment-1:before, .partnership-1:before, .cooperation-1:before {
+        height: 1px;
+        width: 90%;
+        position: absolute;
+        content: '';
+        background-color: white;
+        margin: 15px;
+        z-index: 5;
+        top: 0;
+        right: 0%;
+    }
+    .development-1:hover:before, .investment-1:hover:before, .partnership-1:hover:before, .cooperation-1:hover:before {
+        right: 20%;
+        width: 60%;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .development-1, .investment-1, .partnership-1, .cooperation-1 {
+        width: 50%;
+        height: 300px;
+        padding: 5px 0 35px 0;
+        margin-bottom: 5px;
+        box-shadow: 0 10px 8px -8px grey;
+        -webkit-box-shadow: 0 10px 8px -8px grey;
+        -moz-box-shadow: 0 10px 8px -8px grey;
+    }
+    .development-1, .partnership-1 {
+        padding-left: 0;
+        padding-right: 5px
+    }
+    .investment-1, .cooperation-1 {
+        padding-right: 0;
+        padding-left: 5px;
+    }
+    .development-1 h4, .investment-1 h4, .partnership-1 h4, .cooperation-1 h4 {
+        opacity: 1;
+        color: black;
+        z-index: 5;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .development-1, .investment-1, .partnership-1, .cooperation-1 {
+        width: 100%;
+        height: 200px;
+        }
+    .development-1 img, .investment-1 img, .partnership-1 img, .cooperation-1 img {
+        opacity: .7;
+    }
+}

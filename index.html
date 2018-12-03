@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>x dev</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link href='x-dev-main.css' rel='stylesheet' type='text/css'/>
+        <link href='x-dev-slider.css' rel='stylesheet' type='text/css'/>
+        <link href='x-dev-about.css' rel='stylesheet' type='text/css'/>
+        <link href='x-dev-projects.css' rel='stylesheet' type='text/css'/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <script src="x-dev-nav.js"></script>
+        <script src="x-dev-sections.js"></script>
+    </head>
+
+    <body>
+        <header id="header">
+            <nav id="nav">
+                <ul id="nav-nav" class="nav-mobile">
+                    <li onclick="goToHome()">Home</li>
+                    <li onclick="goToAbout()">About</li>
+                    <li onclick="goToProjects()">Projects</li>
+                    <li onclick="goToTeam()">Team</li>
+                    <li onclick="goToPartners()">Partners</li>
+                    <li onclick="goToContact()">Contact</li>
+                    <div class="icon" onclick="mobileMenu()">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="slideshow-container" id="home">
+                <div class="mySlides fade">
+                    <img src="slider/benjamin-child-90768-unsplash.jpg" alt="" />
+                </div>
+                <div class="mySlides fade">
+                    <img src="slider/nastuh-abootalebi-284881-unsplash.jpg" alt="" />
+                </div>
+                <div class="mySlides fade">
+                    <img src="slider/nastuh-abootalebi-284882-unsplash.jpg" alt="" />
+                </div>
+                <div class="container-top">
+                    <h1>X DEVELOPMENT</h1>
+                    <div class="btn-main" onclick="getStarted()">Get Started</div>
+                    <div style="text-align:center">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                </div> 
+            </div>
+            
+            <div class="about" id="about">
+                <h2>ABOUT US</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut consequat semper viverra nam libero justo laoreet. Risus quis varius quam quisque id diam. Est placerat in egestas erat. Lorem ipsum dolor sit amet consectetur adipiscing. Semper auctor neque vitae tempus quam pellentesque nec. Dictum varius duis at consectetur lorem donec massa. Ipsum suspendisse ultrices gravida dictum. Nibh venenatis cras sed felis eget velit aliquet. Convallis tellus id interdum velit laoreet. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. Sit amet luctus venenatis lectus magna fringilla.</p>
+                <div class="about-pics">
+                    <div class="development-1">
+                        <div class="development-2">
+                            <h4>Development</h4>
+                            <p>semper viverra nam libero justo laoreet sit amet cursus sit amet dictum.</p>
+                            <img src="about/alex-mihis-83335-unsplash.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="investment-1">
+                        <div class="investment-2">
+                            <h4>Investment</h4>
+                            <p>congue eu consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla.</p>
+                            <img src="about/rawpixel-579221-unsplash.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="partnership-1">
+                        <div class="partnership-2">
+                            <h4>Partnership</h4>
+                            <p>semper viverra nam libero justo laoreet sit amet.</p>
+                            <img src="about/rawpixel-567016-unsplash.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cooperation-1">
+                        <div class="cooperation-2">
+                            <h4>Cooperation</h4>
+                            <p>mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh.</p>
+                            <img src="about/new-data-services-746340-unsplash.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects" id="projects">
+                <h2>PROJECTS</h2>
+                <div class="grid">
+                    <div class="box a">
+                        <img src="projects/chris-barbalis-321810-unsplash.jpg">
+                    </div>
+                    <div class="box b title">
+                        <p>Project number 1</p>
+                    </div>
+                    <div class="box c">
+                        <p>rhoncus dolor purus non enim praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra.</p>
+                        <div class="explore">EXPLORE</div>
+                    </div>
+                    <div class="box d">
+                        <img src="projects/julius-drost-541943-unsplash.jpg">
+                    </div>
+                    <div class="box e title">
+                        <p>Project number 2</p>
+                    </div>
+                    <div class="box f">
+                        <p>egestas dui id ornare arcu odio ut sem nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit sed vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat.</p>
+                        <div class="explore">EXPLORE</div>
+                    </div>
+                    <div class="box g">
+                        <img src="projects/luca-bravo-272609-unsplash.jpg">
+                    </div>
+                    <div class="box h title">
+                        <p>Project number 3</p>
+                    </div>
+                    <div class="box i">
+                        <p>arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae justo eget magna fermentum iaculis eu non diam phasellus vestibulum lorem sed risus.</p>
+                        <div class="explore">EXPLORE</div>
+                    </div>
+                    <div class="box j">
+                        <img src="projects/bernard-hermant-638302-unsplash.jpg">
+                    </div>
+                    <div class="box k title">
+                        <p>Project number 4</p>
+                    </div>
+                    <div class="box l">
+                        <p>viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim.</p>
+                        <div class="explore">EXPLORE</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team" id="team">
+                <h2>TEAM</h2>
+                <div class="team-pic">
+                    <div class="team-pic-1">
+                        <img src="team/amanda-hortiz-1086760-unsplash.jpg" alt="" />
+                        <div>
+                            <p>Eva Dev <br>Business Development</p>
+                        </div>
+                    </div>
+                    <div class="team-pic-2">
+                        <img src="team/tyler-nix-490498-unsplash.jpg" alt="" />
+                        <p>Steve Dev <br>Project Management</p>
+                    </div>
+                    <div class="team-pic-3">
+                        <img src="team/tamarcus-brown-266128-unsplash.jpg" alt="" />
+                        <p>Brandon Dev <br>Marketing</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="partners" id="partners">
+                <h2>PARTNERS</h2>
+                <div class="partner-logo">
+                    <img src="http://seekvectorlogo.com/wp-content/uploads/2017/12/microsoft-vector-logo.png" />
+                    <img src="http://seekvectorlogo.com/wp-content/uploads/2017/12/spacex-vector-logo.png" />
+                    <img src="http://seekvectorlogo.com/wp-content/uploads/2018/04/nasaspaceflight-com-vector-logo.png" />
+                    <img src="http://seekvectorlogo.com/wp-content/uploads/2018/01/booking-com-vector-logo.png" />
+                </div>
+            </div>
+            
+            <div class="contact" id="contact">
+                <h2>CONTACT US</h2>
+                <div class="container-first">
+                    <div class="col-1">
+                        <i class="fas fa-mobile-alt"></i>
+                        <p>917-866-124X</p>
+                    </div>
+                    <div class="col-2">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>274-292 7th Ave, Brooklyn,<br>NY 11215</p>
+                    </div>
+                    <div class="col-3">
+                        <i class="far fa-envelope"></i>
+                        <p>office@x-dev.com</p>
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.240604517652!2d-73.98253528459642!3d40.66866727933657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b02516dd59f%3A0xb41ac2ae7b7b7ee8!2s274+7th+Ave%2C+Brooklyn%2C+NY+11215%2C+USA!5e0!3m2!1sen!2sat!4v1543330812909" frameborder="0" style="border:0" allowfullscreen></iframe> 
+            </div>
+        </main>
+
+        <footer>
+            <div class="credits">
+                <div class="credits-1">
+                    <h5>Slider</h5>
+                    <p>Photo by Benjamin Child on Unsplash<br>
+                    Photo by Nastuh Abootalebi on Unsplash</p>
+                    <h5>About</h5>
+                    <p>Photo by Alex Mihis on Unsplash<br>
+                    Photo by NEW DATA SERVICES on Unsplash<br>
+                    Photo by rawpixel on Unsplash</p>
+                </div>
+                <div class="credits-2">
+                    <h5>Projects</h5>
+                    <p>Photo by Bernard Hermant on Unsplash<br>
+                    Photo by Chris Barbalis on Unsplash<br>
+                    Photo by Julius Drost on Unsplash<br>
+                    Photo by Luca Bravo on Unsplash</p>
+                </div>
+                <div class="credits-3">
+                    <h5>Team</h5>
+                    <p>Photo by Tyler Nix on Unsplash<br>
+                    Photo by Tamarcus Brown on Unsplash<br>
+                    Photo by Amanda Hortiz on Unsplash</p>
+                    <h5>Partners</h5>
+                    <p>http://seekvectorlogo.com</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="copyright">
+                    <p>&copy; X-Development <script type="text/javascript">document.write(new Date().getFullYear());</script></p>
+                </div>
+                <div class="socials">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter-square"></i>
+                </div>
+            </div>
+        </footer>
+        <script>
+            // Def pic
+            var slideIndex = 0;
+            var timer = null;
+            showSlides();
+
+            // Previous/Next arrows
+            function plusSlides(n) {
+                clearTimeout(timer);
+                showSlides(slideIndex += n);
+            }
+            // Dots
+            function currentSlide(n) {
+                clearTimeout(timer);
+                showSlides(slideIndex = n);
+            }
+            // Slider/auto
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n==undefined){n = ++slideIndex}
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                timer = setTimeout(showSlides, 5000);
+            }
+            
+        </script>
+    </body>
+</html>
