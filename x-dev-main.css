@@ -121,6 +121,7 @@ main h2 {
 .team-pic img {
     width: 90%;
     height: 80%;
+    background: contain;
     object-fit: contain;
     -webkit-filter: blur(6px);
     filter: blur(6px);
