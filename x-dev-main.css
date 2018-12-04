@@ -126,7 +126,6 @@ main h2 {
     padding-bottom: 30px;
 }
 .team-pic img {
-    width: auto;
     height: 80%;
     -webkit-filter: blur(6px);
     filter: blur(6px);
