@@ -57,7 +57,11 @@
     }
     .development-1:hover img, .investment-1:hover img, .partnership-1:hover img, .cooperation-1:hover img {
         opacity: .7;
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
         transform: scale(1.5);
+        -webkit-transition: 1s ease;
+        -o-transition: 1s ease;
         transition: 1s ease;
     }
     .development-1:hover .development-2, .investment-1:hover .investment-2, .partnership-1:hover .partnership-2, .cooperation-1:hover .cooperation-2 {
@@ -78,6 +82,7 @@
         left: 45%;
         width: 40%;
         -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
         transition: all 0.5s ease;
     }
     .development-1:before, .investment-1:before, .partnership-1:before, .cooperation-1:before {
@@ -95,6 +100,7 @@
         right: 20%;
         width: 60%;
         -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
         transition: all 0.5s ease;
     }
 }
