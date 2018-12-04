@@ -119,10 +119,7 @@ main h2 {
     padding-bottom: 30px;
 }
 .team-pic img {
-    width: 90%;
     height: 80%;
-    background-image: url('');
-    background-size: contain;
     object-fit: contain;
     -webkit-filter: blur(6px);
     filter: blur(6px);
