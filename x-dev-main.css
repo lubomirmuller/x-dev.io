@@ -122,7 +122,7 @@ main h2 {
     width: 90%;
     height: 80%;
     background-image: url('');
-    background-position: contain;
+    background-size: contain;
     object-fit: contain;
     -webkit-filter: blur(6px);
     filter: blur(6px);
