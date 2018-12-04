@@ -12,6 +12,9 @@ header {
     z-index: 9999;
     color: white;
     height: 100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.5)), to(rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,0));
+    background: -o-linear-gradient(top, rgba(0,0,0,.5), rgba(0,0,0,0));
     background: linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,0));
 }
 header:after {
@@ -24,6 +27,8 @@ header:after {
 }
 .header {
     color: white;
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in;
     height: 80px;
     background: none;
@@ -40,6 +45,8 @@ nav {
 }
 .nav {
     line-height: 80px;
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in;
 }
 nav ul {
@@ -220,6 +227,8 @@ footer .socials {
     }
     header:after {
         padding-top: 20px;
+        -webkit-transition: 0.7s ease;
+        -o-transition: 0.7s ease;
         transition: 0.7s ease;
     }
     .header-mobile {
@@ -229,6 +238,8 @@ footer .socials {
     }
     .header-mobile:after {
         margin-left: -1000px;
+        -webkit-transition: 0.7s ease;
+        -o-transition: 0.7s ease;
         transition: 0.7s ease;
     }
     nav {
@@ -236,6 +247,8 @@ footer .socials {
     }
     .nav-mobile li {
         display: block;
+        -webkit-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
         transition: 0.5s ease;
     }
     .nav-mobile li:not(:first-child) {
@@ -249,6 +262,8 @@ footer .socials {
         display: block;
         border-bottom: solid 1px white;
         height: 80px;
+        -webkit-transition: 0.3s ease;
+        -o-transition: 0.3s ease;
         transition: 0.3s ease;
         margin-left: 0;
     }
