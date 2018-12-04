@@ -176,73 +176,73 @@
     .a {
         -ms-grid-column: 1;
         grid-column-start: 1;
-        -ms-grid-column-span: 6;
+        -ms-grid-column-span: 11;
         grid-column-end: 7;
     }
     .b {
-        -ms-grid-column: 7;
+        -ms-grid-column: 13;
         grid-column-start: 7;
-        -ms-grid-column-span: 6;
+        -ms-grid-column-span: 11;
         grid-column-end: 13;
     }
     .c {
-        -ms-grid-column: 7;
+        -ms-grid-column: 13;
         grid-column-start: 7;
-        -ms-grid-column-span: 6;
+        -ms-grid-column-span: 11;
         grid-column-end: 13;
     }
     .d {
         -ms-grid-column: 1;
         grid-column-start: 1;
-        -ms-grid-column-span: 6;
+        -ms-grid-column-span: 11;
         grid-column-end: 7;
     }
     .e {
-        -ms-grid-column: 7;
+        -ms-grid-column: 13;
         grid-column-start: 7;
-        -ms-grid-column-span: 6;
+        -ms-grid-column-span: 11;
         grid-column-end: 13;
     }
     .f {
-        -ms-grid-column: 7;
+        -ms-grid-column: 13;
         grid-column-start: 7;
-        -ms-grid-column-span: 6;
+        -ms-grid-column-span: 11;
         grid-column-end: 13;
     }
     .g {
         -ms-grid-column: 1;
         grid-column-start: 1;
-        -ms-grid-column-span: 6;
+        -ms-grid-column-span: 11;
         grid-column-end: 7;
     }
     .h {
-        -ms-grid-column: 7;
+        -ms-grid-column: 13;
         grid-column-start: 7;
-        -ms-grid-column-span: 6;
+        -ms-grid-column-span: 11;
         grid-column-end: 13;
     }
     .i {
-        -ms-grid-column: 7;
+        -ms-grid-column: 13;
         grid-column-start: 7;
-        -ms-grid-column-span: 6;
+        -ms-grid-column-span: 11;
         grid-column-end: 13;
     }
     .j {
         -ms-grid-column: 1;
         grid-column-start: 1;
-        -ms-grid-column-span: 6;
+        -ms-grid-column-span: 11;
         grid-column-end: 7;
     }
     .k {
-        -ms-grid-column: 7;
+        -ms-grid-column: 13;
         grid-column-start: 7;
-        -ms-grid-column-span: 6;
+        -ms-grid-column-span: 11;
         grid-column-end: 13;
     }
     .l {
-        -ms-grid-column: 7;
+        -ms-grid-column: 13;
         grid-column-start: 7;
-        -ms-grid-column-span: 6;
+        -ms-grid-column-span: 11;
         grid-column-end: 13;
     }
 }
