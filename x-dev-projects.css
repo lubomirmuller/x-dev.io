@@ -421,6 +421,6 @@
 }
 @supports not (display: grid) {
   .explore {
-        margin-left: 0;
+        margin: 5px 0;
     }
 }
