@@ -420,7 +420,11 @@
     }
 }
 @supports not (display: grid) {
-  .explore {
+    .a, .d, .f, .e {
+        max-height: 500px;
+        overflow: hidden;
+    }
+    .explore {
         margin: 5px 0 15px 0;
     }
     .title:after {
