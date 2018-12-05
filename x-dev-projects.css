@@ -429,7 +429,4 @@
     .title p {
         margin: 10px 0;
     }
-    .box p:nth-child(2) {
-        margin-bottom: 0;
-    }
 }
