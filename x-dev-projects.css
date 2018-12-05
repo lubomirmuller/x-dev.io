@@ -424,6 +424,6 @@
         margin: 0 0 10px 0;
     }
     .title:after {
-        margin-bottom: 5px;
+        margin: 5px;
     }
 }
