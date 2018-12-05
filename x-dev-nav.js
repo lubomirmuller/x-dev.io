@@ -35,7 +35,7 @@ function mobileMenuOnResize() {
     "use strict";
     var y = document.getElementById("nav-nav");
     if if (y.matches(".responsive")) {
-        y.className -= " responsive";
+        y.classList.remove("responsive");
     } else {}
 }
 
