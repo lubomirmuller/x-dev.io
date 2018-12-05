@@ -31,6 +31,14 @@ function headerMobile() {
     }
 }
 
+function mobileMenuOnResize() {
+    "use strict";
+    var y = document.getElementById("nav-nav");
+    if (y.matches(".responsive")) {
+        y.classList.remove("responsive");
+    } else {}
+}
+
 function mediaScroll(x) {
     "use strict";
     if (x.matches) {
@@ -38,12 +46,11 @@ function mediaScroll(x) {
         window.onresize = function () {scrollFunctionBig(); };
     } else {
         window.onscroll = function () {scrollFunctionSmall(); headerMobile(); };
-        window.onresize = function () {scrollFunctionSmall(); mobileMenuOnResize(); };
+        window.onresize = function () {scrollFunctionSmall(); headerMobile(); mobileMenuOnResize(); };
     }
 }
 
 var x = window.matchMedia("(min-width: 600px)");
 mediaScroll(x);
 x.addListener(mediaScroll);
-
 
