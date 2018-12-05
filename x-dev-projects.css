@@ -421,12 +421,15 @@
 }
 @supports not (display: grid) {
   .explore {
-        margin: 0 0 10px 0;
+        margin: 5px 0 15px 0;
     }
     .title:after {
         margin: -5px;
     }
     .title p {
         margin: 10px 0;
+    }
+    .box p:nth-child(2) {
+        margin-bottom: 0;
     }
 }
