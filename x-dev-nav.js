@@ -31,14 +31,6 @@ function headerMobile() {
     }
 }
 
-function mobileMenuOnResize() {
-    "use strict";
-    var y = document.getElementById("nav-nav");
-    if if (y.matches(".responsive")) {
-        y.classList.remove("responsive");
-    } else {}
-}
-
 function mediaScroll(x) {
     "use strict";
     if (x.matches) {
