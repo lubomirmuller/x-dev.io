@@ -31,6 +31,16 @@ function headerMobile() {
     }
 }
 
+function mobileMenu() {
+    "use strict";
+    var y = document.getElementById("nav-nav");
+    if (y.className === "nav-mobile") {
+        y.className += " responsive";
+    } else {
+        y.className = "nav-mobile";
+    }
+}
+
 function mediaScroll(x) {
     "use strict";
     if (x.matches) {
