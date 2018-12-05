@@ -426,4 +426,7 @@
     .title:after {
         margin: -5px;
     }
+    .title p {
+        margin: 10px 0;
+    }
 }
