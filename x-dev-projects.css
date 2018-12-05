@@ -420,6 +420,9 @@
     }
 }
 @supports not (display: grid) {
+    .b, .c, .e, .f, .h, .i, .k, .l {
+        padding-left: 0;   
+    }
     .a, .d, .g, .j {
         max-height: 500px;
         overflow: hidden;
