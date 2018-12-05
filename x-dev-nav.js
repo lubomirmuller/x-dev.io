@@ -38,7 +38,7 @@ function mediaScroll(x) {
         window.onresize = function () {scrollFunctionBig(); };
     } else {
         window.onscroll = function () {scrollFunctionSmall(); headerMobile(); };
-        window.onresize = function () {scrollFunctionSmall(); };
+        window.onresize = function () {scrollFunctionSmall(); mobileMenu(); };
     }
 }
 
