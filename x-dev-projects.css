@@ -43,6 +43,10 @@
     background-color: #2c2f33;
     margin: -5px;
 }
+.a, .d, .g, .j {
+    max-height: 500px;
+    overflow: hidden;
+}
 .a {
     -ms-grid-row: 1;
     grid-row-start: 1;
@@ -417,17 +421,16 @@
 }
 
 @media only screen and (max-width: 480px) {
-    .explore {
-        margin-left: -30px;
+    .c, .f, .i, .l {
+        -ms-grid-column: 13;
+        grid-column-start: 7;
+        -ms-grid-column-span: 11;
+        grid-column-end: 13;
     }
 }
 @supports not (display: grid) {
     .b, .c, .e, .f, .h, .i, .k, .l {
         padding-left: 0;   
-    }
-    .a, .d, .g, .j {
-        max-height: 500px;
-        overflow: hidden;
     }
     .d img, .j img {
         margin-top: -20%;
