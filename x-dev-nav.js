@@ -31,6 +31,14 @@ function headerMobile() {
     }
 }
 
+function mobileMenuOnResize() {
+    "use strict";
+    var y = document.getElementById("nav-nav");
+    if if (y.matches(".responsive")) {
+        y.className -= " responsive";
+    } else {}
+}
+
 function mediaScroll(x) {
     "use strict";
     if (x.matches) {
@@ -38,7 +46,7 @@ function mediaScroll(x) {
         window.onresize = function () {scrollFunctionBig(); };
     } else {
         window.onscroll = function () {scrollFunctionSmall(); headerMobile(); };
-        window.onresize = function () {scrollFunctionSmall(); mobileMenu(); };
+        window.onresize = function () {scrollFunctionSmall(); mobileMenuOnResize(); };
     }
 }
 
