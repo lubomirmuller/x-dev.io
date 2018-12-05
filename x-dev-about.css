@@ -24,6 +24,7 @@
     height: 100%;
     width: 100%;
     opacity: .85;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 .development-1 h4, .investment-1 h4, .partnership-1 h4, .cooperation-1 h4 {
