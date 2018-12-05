@@ -420,7 +420,7 @@
     }
 }
 @supports not (display: grid) {
-    .a, .d, .f, .e {
+    .a, .d, .g, .j {
         max-height: 500px;
         overflow: hidden;
     }
