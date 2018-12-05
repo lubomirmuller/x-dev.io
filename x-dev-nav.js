@@ -50,7 +50,7 @@ function mediaScroll(x) {
     }
 }
 
-var x = window.matchMedia("(min-width: 600px)");
+var x = window.matchMedia("(min-width: 601px)");
 mediaScroll(x);
 x.addListener(mediaScroll);
 
