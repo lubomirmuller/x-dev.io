@@ -423,4 +423,7 @@
   .explore {
         margin: 0 0 10px 0;
     }
+    .title:after {
+        padding-bottom: 5px;
+    }
 }
