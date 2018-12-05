@@ -423,6 +423,7 @@
     .a, .d, .g, .j {
         max-height: 500px;
         overflow: hidden;
+        margin-top: -50%;
     }
     .explore {
         margin: 5px 0 15px 0;
