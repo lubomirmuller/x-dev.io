@@ -1,32 +1,58 @@
+// http://jsfiddle.net/t1dv1rbo/
 function scrollTo(element, to, duration) {
-    "use strict";
-    var start = element.scrollTop,
-        change = to - start,
-        currentTime = 0,
-        increment = 20;
+
+    var 
+    start_time = Date.now(),
+    end_time = start_time + duration,
+    start = element.scrollTop,
+    distance = to - start,
+
+    smooth_step = function(start, end, point) {
         
-    var animateScroll = function () {
-        currentTime += increment;
-        var val = Math.easeInOutQuad(currentTime, start, change, duration);
-        element.scrollTop = val;
-        if (currentTime < duration) {
-            setTimeout(animateScroll, increment);
+        var x = (point - start) / (end - start);
+        return x*x*(3 - 2*x);
+    }
+
+    return new Promise(function(resolve, reject) {
+
+        var previous_top = element.scrollTop,
+
+        scroll_frame = function() {
+            if(element.scrollTop != previous_top) {
+                reject("interrupted");
+                return;
+            }
+
+            var 
+            now = Date.now(),
+            point = smooth_step(start_time, end_time, now),
+            frameTop = Math.round(start + (distance * point));
+            element.scrollTop = frameTop;
+            
+            if(now >= end_time) {
+                resolve();
+                return;
+            }
+
+            if(element.scrollTop === previous_top
+                && element.scrollTop !== frameTop) {
+                resolve();
+                return;
+            }
+            previous_top = element.scrollTop;
+            setTimeout(scroll_frame, 0);
         }
-    };
-    animateScroll();
+        setTimeout(scroll_frame, 0);
+    });
 }
 
-//t = current time
-//b = start value
-//c = change in value
-//d = duration
-Math.easeInOutQuad = function (t, b, c, d) {
+function mobileMenuHome() {
     "use strict";
-    t /= d / 2;
-    if (t < 1) return c / 2 * t * t + b;
-    t--;
-    return -c / 2 * (t * (t - 2) - 1) + b;
-};
+    var z = document.getElementById("nav-nav");
+    if (z.matches(".responsive")) {
+        mobileMenu();
+    } else {}
+}
 
 function mobileMenu() {
     "use strict";
@@ -36,13 +62,6 @@ function mobileMenu() {
     } else {
         y.className = "nav-mobile";
     }
-}
-
-function mobileMenuHome() {
-    var z = document.getElementById("nav-nav");
-    if (z.matches(".responsive")) {
-        mobileMenu();
-    } else {}
 }
 
 var b = document.documentElement,
