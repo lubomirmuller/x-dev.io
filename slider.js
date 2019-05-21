@@ -5,7 +5,7 @@ function showSlides(n) {
   var slider = document.querySelector(".slider");
   var slides = slider.querySelectorAll("img");
 
-  var dots = document.getElementsByClassName("dot");
+  var dots = document.getElementsByClassName("slideshow-container__navigation-dot");
 
   if (n === undefined) {
     n = ++slide;
@@ -22,10 +22,10 @@ function showSlides(n) {
     slides[i].style.opacity = 0;
   }
   for (var i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" navigation-dot-active", "");
   }
   slides[slide - 1].style.opacity = 1;
-  dots[slide - 1].className += " active";
+  dots[slide - 1].className += " navigation-dot-active";
   timer = setTimeout(showSlides, 8000);
 }
 
