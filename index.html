@@ -1,268 +1,408 @@
 <!DOCTYPE html>
-<html>
+<html class="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>x-development</title>
+    <link rel="icon" href="" type="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link href="x-dev-main.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>x-development</title>
-  <link rel="icon" href="" type="">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
-  <link href="x-dev-main.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-  <header id="header" class="header">
-    <nav class="nav">
-      <a href="#" class="icon" onclick="overlay(event)">
-        <div class="bar-1"></div>
-        <div class="bar-2"></div>
-        <div class="bar-3"></div>
-      </a>
-      <ul class="mobile-menu-overlay">
-        <li><a href="#home" onclick="scrollToElement(event)">Home</a></li>
-        <li><a href="#about" onclick="scrollToElement(event)">About</a></li>
-        <li><a href="#projects" onclick="scrollToElement(event)">Projects</a></li>
-        <li><a href="#partners" onclick="scrollToElement(event)">Partners</a></li>
-        <li><a href="#contact" onclick="scrollToElement(event)">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="logo-container">
-      <div class="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
-          <path class="st0" d="M0 0l110.83 150H150L39.17 0z" />
-          <path class="st1" d="M100.49 67L150 0h-39.17L80.91 40.5z" />
-          <path class="st1" d="M100.49 67L150 0h-39.17L80.91 40.5z" />
-          <g>
-            <path class="st1" d="M49.51 83L0 150h39.17l29.92-40.5z" />
-            <path class="st1" d="M49.51 83L0 150h39.17l29.92-40.5z" />
-          </g>
-        </svg>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <div class="slideshow-container slider" id="home">
-      <img src="images/slider/benjamin-child-90768-unsplash.jpg" alt="bright and spacious, large conference room" />
-      <img src="images/slider/nastuh-abootalebi-284881-unsplash.jpg" alt="company's kitchen area, common area" />
-      <img src="images/slider/nastuh-abootalebi-284882-unsplash.jpg"
-        alt="hallway with the rooms and offices on both sides" />
-      <div class="container-top">
-        <div class="hero-text">
-          <a href="#" class="prev" onclick="prevNext(-1)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-          </a>
-          <h1>X DEVELOPMENT</h1>
-          <div class="dots">
-            <a href="#" class="dot" onclick="currentSlide(1)"></a>
-            <a href="#" class="dot" onclick="currentSlide(2)"></a>
-            <a href="#" class="dot" onclick="currentSlide(3)"></a>
-          </div>
-          <a href="#" class="next" onclick="prevNext(1)">
-            <div class="bar3"></div>
-            <div class="bar4"></div>
-          </a>
+  <body class="body">
+    <header class="header" id="header">
+      <nav class="navigation">
+        <a
+          href="#"
+          class="navigation__hamburger-menu link"
+          onclick="overlay(event)"
+        >
+          <div class="navigation__hamburger-menu-bar"></div>
+          <div class="navigation__hamburger-menu-bar"></div>
+          <div class="navigation__hamburger-menu-bar"></div>
+        </a>
+        <ul class="navigation__main-menu">
+          <li class="navigation__main-menu-item">
+            <a
+              class="navigation__main-menu-link link"
+              href="#home"
+              onclick="scrollToElement(event)"
+              >Home</a
+            >
+          </li>
+          <li class="navigation__main-menu-item">
+            <a
+              class="navigation__main-menu-link link"
+              href="#about"
+              onclick="scrollToElement(event)"
+              >About</a
+            >
+          </li>
+          <li class="navigation__main-menu-item">
+            <a
+              class="navigation__main-menu-link link"
+              href="#projects"
+              onclick="scrollToElement(event)"
+              >Projects</a
+            >
+          </li>
+          <li class="navigation__main-menu-item">
+            <a
+              class="navigation__main-menu-link link"
+              href="#partners"
+              onclick="scrollToElement(event)"
+              >Partners</a
+            >
+          </li>
+          <li class="navigation__main-menu-item">
+            <a
+              class="navigation__main-menu-link link"
+              href="#contact"
+              onclick="scrollToElement(event)"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="site-logo">
+        <div class="site-logo__logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+            <path class="svg-main-color" d="M0 0l110.83 150H150L39.17 0z" />
+            <path
+              class="svg-secondary-color"
+              d="M100.49 67L150 0h-39.17L80.91 40.5z"
+            />
+            <path
+              class="svg-secondary-color"
+              d="M100.49 67L150 0h-39.17L80.91 40.5z"
+            />
+            <g>
+              <path
+                class="svg-secondary-color"
+                d="M49.51 83L0 150h39.17l29.92-40.5z"
+              />
+              <path
+                class="svg-secondary-color"
+                d="M49.51 83L0 150h39.17l29.92-40.5z"
+              />
+            </g>
+          </svg>
         </div>
       </div>
-    </div>
+    </header>
 
-    <div class="about" id="about">
-      <h2>ABOUT US</h2>
-      <div class="about-pics">
-        <div class="development-1">
-          <img src="images/about/alex-mihis-83335-unsplash.jpg"
-            alt="glass business building representing company's development activities" />
-          <div class="development-2">
-            <h3>Development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-              assumenda, dolorem voluptatum cupiditate nulla eius! Esse
-              doloribus reprehenderit aliquid nesciunt, totam voluptatum nulla
-              quas sit.
-            </p>
-          </div>
-        </div>
-        <div class="investment-1">
-          <img src="images/about/rawpixel-579221-unsplash.jpg"
-            alt="hands holding tablet device displaying finance report with graphs and numbers" />
-          <div class="investment-2">
-            <h3>Investment</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
-              eius iste inventore, aut incidunt, repellat nesciunt
-              consectetur, dolorum quis voluptatem ad dolor! Eaque odit modi
-              iste sequi. Cumque, illum quasi.
-            </p>
-          </div>
-        </div>
-        <div class="partnership-1">
-          <img src="images/about/rawpixel-567016-unsplash.jpg" alt="businessmen handshake representing partnership" />
-          <div class="partnership-2">
-            <h3>Partnership</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Expedita facilis aliquid distinctio tempora suscipit vitae
-              laboriosam quam cum libero rerum incidunt commodi nobis quaerat,
-              blanditiis enim. Laborum, fugit.
-            </p>
-          </div>
-        </div>
-        <div class="cooperation-1">
-          <img src="images/about/new-data-services-746340-unsplash.jpg"
-            alt="stylish green chair among other white ones in the meeting room representing coopertion and dialog" />
-          <div class="cooperation-2">
-            <h3>Cooperation</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Ducimus maxime aut odio. Animi, qui explicabo libero corporis
-              rem minus officia nemo inventore?
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="projects" id="projects">
-      <h2>PROJECTS</h2>
-      <div class="grid-projects">
-        <div class="project-1">
-          <img src="images/projects/chris-barbalis-321810-unsplash.jpg"
-            alt="project one is detail of modern glass building's architecture" />
-
-          <div class="project-description">
-            <h3>First Project</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Commodi tempore eum velit perferendis consectetur voluptatem
-              culpa eveniet amet deleniti quasi officiis, similique ab error
-              optio quo ratione vel saepe ullam quisquam officia. Dolorum, non
-              cupiditate.
-            </p>
-            <div class="explore">EXPLORE</div>
-          </div>
-        </div>
-
-        <div class="project-2">
-          <img src="images/projects/julius-drost-541943-unsplash.jpg"
-            alt="project two is reflection of glass ultramodern building in the business park" />
-          <div class="project-description">
-            <h3>Second Project</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-              illum laudantium ullam repellendus itaque doloribus facilis
-              sequi eaque libero aperiam? Nulla placeat quibusdam,
-              necessitatibus blanditiis dignissimos numquam id dolore dolorum,
-              distinctio, animi incidunt ipsa rem!
-            </p>
-            <div class="explore">EXPLORE</div>
-          </div>
-        </div>
-
-        <div class="project-3">
-          <img src="images/projects/luca-bravo-272609-unsplash.jpg"
-            alt="project three is high ceiling, white tuned shopping mall building interior" />
-          <div class="project-description">
-            <h3>Third Project</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Excepturi dignissimos voluptate impedit obcaecati quam corrupti
-              deserunt reiciendis? Laboriosam incidunt ad dolor maxime, optio
-              ea ut quasi sapiente repellat sequi vitae! Similique dignissimos
-              quia iusto quod.
-            </p>
-            <div class="explore">EXPLORE</div>
-          </div>
-        </div>
-
-        <div class="project-4">
-          <img src="images/projects/bernard-hermant-638302-unsplash.jpg"
-            alt="project four is a modern architecture administrative building with interesting facade design" />
-          <div class="project-description">
-            <h3>Fourth Project</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
-              rem nemo, odio mollitia architecto tenetur, necessitatibus quae
-              iusto quas ullam doloremque adipisci placeat, cumque obcaecati
-              dolore. Soluta nesciunt reprehenderit beatae quas ducimus
-              doloribus vel molestias.
-            </p>
-            <div class="explore">EXPLORE</div>
+    <main class="main">
+      <div class="slideshow-container slider" id="home">
+        <img
+          class="slideshow-container__image"
+          src="images/slider/benjamin-child-90768-unsplash.jpg"
+          alt="bright and spacious, large conference room"
+        />
+        <img
+          class="slideshow-container__image"
+          src="images/slider/nastuh-abootalebi-284881-unsplash.jpg"
+          alt="company's kitchen area, common area"
+        />
+        <img
+          class="slideshow-container__image"
+          src="images/slider/nastuh-abootalebi-284882-unsplash.jpg"
+          alt="hallway with the rooms and offices on both sides"
+        />
+        <div class="slideshow-container__overlay">
+          <div class="slideshow-container__navigation-container">
+            <a
+              href="#"
+              class="slideshow-container__navigation-left link"
+              onclick="prevNext(-1)"
+            >
+              <div class="slideshow-container__navigation-left-bar1"></div>
+              <div class="slideshow-container__navigation-left-bar2"></div>
+            </a>
+            <h1 class="heading__1">X DEVELOPMENT</h1>
+            <div class="slideshow-container__navigation-dot-container">
+              <a
+                href="#"
+                class="slideshow-container__navigation-dot link"
+                onclick="currentSlide(1)"
+              ></a>
+              <a
+                href="#"
+                class="slideshow-container__navigation-dot link"
+                onclick="currentSlide(2)"
+              ></a>
+              <a
+                href="#"
+                class="slideshow-container__navigation-dot link"
+                onclick="currentSlide(3)"
+              ></a>
+            </div>
+            <a
+              href="#"
+              class="slideshow-container__navigation-right link"
+              onclick="prevNext(1)"
+            >
+              <div class="slideshow-container__navigation-right-bar1"></div>
+              <div class="slideshow-container__navigation-right-bar2"></div>
+            </a>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="partners" id="partners">
-      <h2>PARTNERS</h2>
-      <div class="partner-logo">
-        <img src="images/google-chrome-1.svg" alt="google chrome logo" />
-        <img src="images/google-chrome-1.svg" alt="google chrome logo" />
-        <img src="images/google-chrome-1.svg" alt="google chrome logo" />
-        <img src="images/google-chrome-1.svg" alt="google chrome logo" />
-        <img src="images/google-chrome-1.svg" alt="google chrome logo" />
-        <img src="images/google-chrome-1.svg" alt="google chrome logo" />
+      <div class="about" id="about">
+        <h2 class="heading__2">ABOUT US</h2>
+        <div class="about__grid">
+          <div class="about__container">
+            <img
+              class="about__image"
+              src="images/about/alex-mihis-83335-unsplash.jpg"
+              alt="glass business building representing company's development activities"
+            />
+            <div class="about__text">
+              <h3 class="heading__3">Development</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                assumenda, dolorem voluptatum cupiditate nulla eius! Esse
+                doloribus reprehenderit aliquid nesciunt, totam voluptatum nulla
+                quas sit.
+              </p>
+            </div>
+          </div>
+          <div class="about__container">
+            <img
+              class="about__image"
+              src="images/about/rawpixel-579221-unsplash.jpg"
+              alt="hands holding tablet device displaying finance report with graphs and numbers"
+            />
+            <div class="about__text">
+              <h3 class="heading__3">Investment</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
+                eius iste inventore, aut incidunt, repellat nesciunt
+                consectetur, dolorum quis voluptatem ad dolor! Eaque odit modi
+                iste sequi. Cumque, illum quasi.
+              </p>
+            </div>
+          </div>
+          <div class="about__container">
+            <img
+              class="about__image"
+              src="images/about/rawpixel-567016-unsplash.jpg"
+              alt="businessmen handshake representing partnership"
+            />
+            <div class="about__text">
+              <h3 class="heading__3">Partnership</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita facilis aliquid distinctio tempora suscipit vitae
+                laboriosam quam cum libero rerum incidunt commodi nobis quaerat,
+                blanditiis enim. Laborum, fugit.
+              </p>
+            </div>
+          </div>
+          <div class="about__container">
+            <img
+              class="about__image"
+              src="images/about/new-data-services-746340-unsplash.jpg"
+              alt="stylish green chair among other white ones in the meeting room representing coopertion and dialog"
+            />
+            <div class="about__text">
+              <h3 class="heading__3">Cooperation</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Ducimus maxime aut odio. Animi, qui explicabo libero corporis
+                rem minus officia nemo inventore?
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="contact" id="contact">
-      <h2>CONTACT US</h2>
-      <div class="container-first">
-        <div class="col-1">
-          <i class="fas fa-mobile-alt"></i>
-          <p x-ms-format-detection="none">917-866-124X</p>
-        </div>
-        <div class="col-2">
-          <i class="fas fa-map-marker-alt"></i>
-          <p>274-292 7th Ave, Brooklyn,<br />NY 11215</p>
-        </div>
-        <div class="col-3">
-          <i class="far fa-envelope"></i>
-          <p>office@x-dev.com</p>
-        </div>
-      </div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.240604517652!2d-73.98253528459642!3d40.66866727933657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b02516dd59f%3A0xb41ac2ae7b7b7ee8!2s274+7th+Ave%2C+Brooklyn%2C+NY+11215%2C+USA!5e0!3m2!1sen!2sat!4v1543330812909"
-        frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-  </main>
+      <div class="projects" id="projects">
+        <h2 class="heading__2">PROJECTS</h2>
+        <div class="projects__grid">
+          <div class="projects__grid-container">
+            <img
+              class="projects__image"
+              src="images/projects/chris-barbalis-321810-unsplash.jpg"
+              alt="project one is detail of modern glass building's architecture"
+            />
 
-  <footer>
-    <div class="credits">
-      <div class="credits-1">
-        <h4>Slider</h4>
-        <p>
-          Photo by Benjamin Child on Unsplash<br />
-          Photo by Nastuh Abootalebi on Unsplash
-        </p>
-        <h4>About</h4>
-        <p>
-          Photo by Alex Mihis on Unsplash<br />
-          Photo by NEW DATA SERVICES on Unsplash<br />
-          Photo by rawpixel on Unsplash
-        </p>
+            <div class="projects__text">
+              <h3 class="heading__3">First Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Commodi tempore eum velit perferendis consectetur voluptatem
+                culpa eveniet amet deleniti quasi officiis, similique ab error
+                optio quo ratione vel saepe ullam quisquam officia. Dolorum, non
+                cupiditate.
+              </p>
+              <button class="projects__button">EXPLORE</button>
+            </div>
+          </div>
+
+          <div class="projects__grid-container">
+            <img
+              class="projects__image"
+              src="images/projects/julius-drost-541943-unsplash.jpg"
+              alt="project two is reflection of glass ultramodern building in the business park"
+            />
+            <div class="projects__text">
+              <h3 class="heading__3">Second Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                illum laudantium ullam repellendus itaque doloribus facilis
+                sequi eaque libero aperiam? Nulla placeat quibusdam,
+                necessitatibus blanditiis dignissimos numquam id dolore dolorum,
+                distinctio, animi incidunt ipsa rem!
+              </p>
+              <button class="projects__button">EXPLORE</button>
+            </div>
+          </div>
+
+          <div class="projects__grid-container">
+            <img
+              class="projects__image"
+              src="images/projects/luca-bravo-272609-unsplash.jpg"
+              alt="project three is high ceiling, white tuned shopping mall building interior"
+            />
+            <div class="projects__text">
+              <h3 class="heading__3">Third Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi dignissimos voluptate impedit obcaecati quam corrupti
+                deserunt reiciendis? Laboriosam incidunt ad dolor maxime, optio
+                ea ut quasi sapiente repellat sequi vitae! Similique dignissimos
+                quia iusto quod.
+              </p>
+              <button class="projects__button">EXPLORE</button>
+            </div>
+          </div>
+
+          <div class="projects__grid-container">
+            <img
+              class="projects__image"
+              src="images/projects/bernard-hermant-638302-unsplash.jpg"
+              alt="project four is a modern architecture administrative building with interesting facade design"
+            />
+            <div class="projects__text">
+              <h3 class="heading__3">Fourth Project</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
+                rem nemo, odio mollitia architecto tenetur, necessitatibus quae
+                iusto quas ullam doloremque adipisci placeat, cumque obcaecati
+                dolore. Soluta nesciunt reprehenderit beatae quas ducimus
+                doloribus vel molestias.
+              </p>
+              <button class="projects__button">EXPLORE</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="credits-2">
-        <h4>Projects</h4>
-        <p>
-          Photo by Bernard Hermant on Unsplash<br />
-          Photo by Chris Barbalis on Unsplash<br />
-          Photo by Julius Drost on Unsplash<br />
-          Photo by Luca Bravo on Unsplash
-        </p>
-        <h4>Partners</h4>
-        <p>https://worldvectorlogo.com/</p>
+
+      <div class="partners" id="partners">
+        <h2 class="heading__2">PARTNERS</h2>
+        <div class="partners__container">
+          <img
+            class="partners__logo"
+            src="images/google-chrome-1.svg"
+            alt="google chrome logo"
+          />
+          <img
+            class="partners__logo"
+            src="images/google-chrome-1.svg"
+            alt="google chrome logo"
+          />
+          <img
+            class="partners__logo"
+            src="images/google-chrome-1.svg"
+            alt="google chrome logo"
+          />
+          <img
+            class="partners__logo"
+            src="images/google-chrome-1.svg"
+            alt="google chrome logo"
+          />
+          <img
+            class="partners__logo"
+            src="images/google-chrome-1.svg"
+            alt="google chrome logo"
+          />
+          <img
+            class="partners__logo"
+            src="images/google-chrome-1.svg"
+            alt="google chrome logo"
+          />
+        </div>
       </div>
-      <div class="socials">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter-square"></i>
+
+      <div class="contact" id="contact">
+        <h2 class="heading__2">CONTACT US</h2>
+        <div class="contact__container">
+          <div class="contact__col">
+            <i class="contact__col-icon fas fa-mobile-alt"></i>
+            <p x-ms-format-detection="none">917-866-124X</p>
+          </div>
+          <div class="contact__col">
+            <i class="contact__col-icon fas fa-map-marker-alt"></i>
+            <p>274-292 7th Ave, Brooklyn,<br />NY 11215</p>
+          </div>
+          <div class="contact__col">
+            <i class="contact__col-icon far fa-envelope"></i>
+            <p>office@x-dev.com</p>
+          </div>
+        </div>
+        <iframe
+          class="contact__google-maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.240604517652!2d-73.98253528459642!3d40.66866727933657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b02516dd59f%3A0xb41ac2ae7b7b7ee8!2s274+7th+Ave%2C+Brooklyn%2C+NY+11215%2C+USA!5e0!3m2!1sen!2sat!4v1543330812909"
+          frameborder="0"
+          style="border:0"
+          allowfullscreen
+        ></iframe>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="copyright">
+    </main>
+
+    <footer class="footer">
+      <div class="footer__credits">
+        <div class="footer__credits-first">
+          <h4 class="heading__4">Slider</h4>
+          <p>
+            Photo by Benjamin Child on Unsplash<br />
+            Photo by Nastuh Abootalebi on Unsplash
+          </p>
+          <h4 class="heading__4">About</h4>
+          <p>
+            Photo by Alex Mihis on Unsplash<br />
+            Photo by NEW DATA SERVICES on Unsplash<br />
+            Photo by rawpixel on Unsplash
+          </p>
+        </div>
+        <div class="footer__credits-second">
+          <h4 class="heading__4">Projects</h4>
+          <p>
+            Photo by Bernard Hermant on Unsplash<br />
+            Photo by Chris Barbalis on Unsplash<br />
+            Photo by Julius Drost on Unsplash<br />
+            Photo by Luca Bravo on Unsplash
+          </p>
+          <h4 class="heading__4">Partners</h4>
+          <p>https://worldvectorlogo.com/</p>
+        </div>
+        <div class="footer__socials">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter-square"></i>
+        </div>
+      </div>
+      <div class="footer__copyright">
         <p>
           &copy; X-DEVELOPMENT
           <script type="text/javascript">
@@ -270,13 +410,11 @@
           </script>
         </p>
       </div>
-    </div>
-  </footer>
-  <a href="#" class="toTop" onclick="scrollToTop(event)">
-    <i class="fas fa-chevron-up fa-3x"></i>
-  </a>
-  <script src="slider.js"></script>
-  <script src="x-dev-nav.js"></script>
-</body>
-
+    </footer>
+    <a href="#" class="btn-to-top" onclick="scrollToTop(event)">
+      <i class="btn-to-top__icon fas fa-chevron-up fa-3x"></i>
+    </a>
+    <script src="slider.js"></script>
+    <script src="x-dev-nav.js"></script>
+  </body>
 </html>
