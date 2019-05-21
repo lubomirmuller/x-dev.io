@@ -436,6 +436,7 @@ a[href^=tel] {
 
 .projects__button {
     color: hsl(213, 26%, 25%);
+    background: hsl(0, 0%, 100%);
     font-weight: 600;
     font-size: inherit;
     letter-spacing: 1.3px;
