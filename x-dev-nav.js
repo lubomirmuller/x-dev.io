@@ -1,3 +1,5 @@
+"use strict";
+
 //==== navbar styling ====//
 
 //change color and height of navbar on scroll
@@ -6,44 +8,47 @@
 document.addEventListener("scroll", navbarStyle);
 
 function navbarStyle() {
-    var nav = document.querySelector("nav");
+    var nav = document.querySelector(".navigation");
+
     if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-        nav.classList.add("nav-scroll");
+        nav.classList.add("navigation-scroll-style");
     } else {
-        nav.classList.remove("nav-scroll");
+        nav.classList.remove("navigation-scroll-style");
     }
 }
 
 // change style and size of svg logo
 document.addEventListener("scroll", function () {
-    var logo = document.querySelector(".logo");
-    var fill = document.querySelector(".st0");
+    var logo = document.querySelector(".site-logo__logo");
+    var fill = document.querySelector(".svg-main-color");
+
     if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-        logo.classList.add("logo-light");
-        fill.classList.add("fill");
+        logo.classList.add("site-logo__logo--light");
+        fill.classList.add("svg-main-color--change");
     } else {
-        logo.classList.remove("logo-light");
-        fill.classList.remove("fill");
+        logo.classList.remove("site-logo__logo--light");
+        fill.classList.remove("svg-main-color--change");
     }
-})
+});
 
 //==== navbar navigation ====//
 
 // animate scrolling to element
 function scrollToElem(element, to, duration) {
-    const start = element.scrollTop;
-    const change = to - start;
-    let time = 0;
-    let increment = 20;
+    var start = element.scrollTop;
+    var change = to - start;
+    var time = 0;
+    var increment = 20;
 
-    const animate = function () {
+    var animate = function animate() {
         time += increment;
         element.scrollTop = easeInOutQuad(time, start, change, duration);
 
         if (time < duration) {
-            const prevScroll = element.scrollTop;
-            setTimeout(() => {
-                const currentScroll = element.scrollTop;
+            var prevScroll = element.scrollTop;
+            setTimeout(function () {
+                var currentScroll = element.scrollTop;
+
                 if (prevScroll === currentScroll) {
                     animate();
                 } else {
@@ -53,13 +58,15 @@ function scrollToElem(element, to, duration) {
         } else {
             return;
         }
+
         // here you can change easing function 
         // based on https://kodhus.com/easings/
         function easeInOutQuad(t, b, c, d) {
-            if ((t /= d / 2) < 1) return (c / 2) * t * t + b;
-            return (-c / 2) * (--t * (t - 2) - 1) + b;
+            if ((t /= d / 2) < 1) return c / 2 * t * t + b;
+            return -c / 2 * (--t * (t - 2) - 1) + b;
         }
     };
+
     animate();
 }
 
@@ -68,6 +75,7 @@ function scrollToElem(element, to, duration) {
 function scrollToElement(event) {
     event.preventDefault();
     var href = event.target.getAttribute("href");
+
     // using ID
     // var hrefSlice = href.slice(1);
     // var getElem = document.getElementById(hrefSlice);
@@ -77,22 +85,22 @@ function scrollToElement(event) {
     scrollToElem(document.body, dest, 600);
 }
 
+
 // show/hide to top button
 function btnToTop() {
-    const btnToTop = document.querySelector(".toTop");
+    var btnToTop = document.querySelector(".btn-to-top");
 
     if (window.pageYOffset > 180) {
-        btnToTop.classList.add("fade-in");
+        btnToTop.classList.add("btn-to-top--show");
     } else {
-        btnToTop.classList.remove("fade-in");
+        btnToTop.classList.remove("btn-to-top--show");
     }
 }
 
-document.addEventListener("load", () => {
+document.addEventListener("load", function () {
     btnToTop();
 });
-
-document.addEventListener("scroll", () => {
+document.addEventListener("scroll", function () {
     btnToTop();
 });
 
@@ -106,25 +114,29 @@ function scrollToTop(event) {
 // toggle nav mobile background and overlay
 function overlay(event) {
     event.preventDefault();
-    var mob1 = document.querySelector(".nav");
-    var mob2 = document.querySelector(".mobile-menu-overlay");
+    var mob1 = document.querySelector(".navigation");
+    var mob2 = document.querySelector(".navigation__main-menu");
+
     if (mob1.classList) {
-        mob1.classList.toggle("responsive-2");
+        mob1.classList.toggle("navigation--background");
     }
+
     if (mob2.classList) {
-        mob2.classList.toggle("responsive-3");
+        mob2.classList.toggle("navigation__main-menu--height");
     }
 }
 
+
 // remove overlay when nav links are clicked
-var mobileOverlay = document.querySelector(".mobile-menu-overlay");
+var mobileOverlay = document.querySelector(".navigation__main-menu");
 var mobileOverlayLi = mobileOverlay.querySelectorAll("li");
+
 for (var i = 0; i < mobileOverlayLi.length; i++) {
     mobileOverlayLi[i].addEventListener("click", overlay);
 }
 
 // remove overlay on resize
 window.addEventListener("resize", function () {
-    document.querySelector(".nav").classList.remove("responsive-2");
-    document.querySelector(".mobile-menu-overlay").classList.remove("responsive-3");
+    document.querySelector(".navigation").classList.remove("navigation--background");
+    document.querySelector(".navigation__main-menu").classList.remove("navigation__main-menu--height");
 });
