@@ -532,6 +532,7 @@ a[href^=tel] {
     display: inline-block;
     font-size: 3.5rem;
     padding: 1rem 10.5rem 0 0;
+    cursor: pointer;
 }
 
 .footer__copyright {
