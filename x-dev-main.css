@@ -644,6 +644,10 @@ a[href^=tel] {
         width: inherit;
         text-align: center;
     }
+    
+    .navigation__main-menu-link {
+        font-size: 1.55rem;
+    }
 
     .site-logo {
         top: 7px;
