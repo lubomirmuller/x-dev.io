@@ -563,15 +563,23 @@ a[href^=tel] {
     width: 100%;
 }
 
+.btn-to-top-cont {
+  display: block;
+  position: relative;
+  right: 5%;
+  height: 0;
+  width: 60px;
+  float: right;
+}
+
 .btn-to-top {
-    display: block;
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 8.5rem;
-    margin-left: 90%;
-    background-color: hsla(0, 0%, 0%, 0.65);
-    z-index: -999;
+  display: block;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 8.5rem;
+  background-color: hsla(0, 0%, 0%, 0.65);
+  z-index: -999;
 }
 
 .btn-to-top__icon {
